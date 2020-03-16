@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<title>Gallery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css\o2.html">
+<link rel="stylesheet" href="css\o4.html">
+<link rel="stylesheet" href="css\o5.html">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-quarter img{margin-bottom: -6px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+</style>
+<body class="w3-light-grey">
+
+<header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding"><font color="teal"; size="10px"><b>Gallery</b></font></span></header>
+
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="f1.html" class="w3-bar-item w3-button w3-teal">Home</a>
+  <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+  <a href="opportunities.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Opportunities</a>
+  <a href="challenges.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Challenges</a>
+ 
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">More</button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+
+    </div>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#team" class="w3-bar-item w3-button">Team</a>
+    <a href="#work" class="w3-bar-item w3-button">Work</a>
+    <a href="#pricing" class="w3-bar-item w3-button">Price</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+  
+  <!-- Photo grid -->
+  <div class="w3-row w3-grayscale-min">
+    <div class="w3-quarter">
+      <img src="images\g1.jpeg" style="width:100%" onclick="onClick(this)" alt="E-books">
+      <img src="images\g2.png" style="width:100%" onclick="onClick(this)" alt="Online Library">
+      <img src="images\g3.jpg" style="width:100%" onclick="onClick(this)" alt="E-Magzine">
+   </div>
+    
+   <div class="w3-quarter">
+      <img src="images\g4.jpg" style="width:100%" onclick="onClick(this)" alt="E-News">
+      <img src="images\g5.jpg" style="width:100%" onclick="onClick(this)" alt="File Format(PDF)">
+      <img src="images\g6.png" style="width:100%" onclick="onClick(this)" alt="E-Magzine">
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="images\g7.jpg" style="width:100%" onclick="onClick(this)" alt="E-Data Systems">
+      <img src="images\g8.jpg" style="width:100%" onclick="onClick(this)" alt="E-blogs">
+      <img src="images\g9.jpeg" style="width:100%" onclick="onClick(this)" alt="Database">
+    </div>
+
+    <div class="w3-quarter">
+      <img src="images\g10.jpg" style="width:100%" onclick="onClick(this)" alt="MS excel database">
+      <img src="images\g11.jpg" style="width:100%" onclick="onClick(this)" alt="U7 Gaming Wars">
+      <img src="images\g12.jpg" style="width:100%" onclick="onClick(this)" alt="E-Governance">
+    </div>
+  </div>
+
+  
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="gallery.html" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="gallery2.html" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="gallery2.html" class="w3-bar-item w3-button w3-hover-black">&raquo;</a>
+    </div>
+  </div>
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="g1" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+
+ 
+  <div class="w3-black w3-center w3-padding-24"></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("g1").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css\w3.css">
+<link rel="stylesheet" href="css\w4.css">
+<link rel="stylesheet" href="css\w5.css">
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card-2 w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    
+  </a>
+  <a href="database.htm" class="w3-bar-item w3-button">Database</a>
+  <a href="control.htm" class="w3-bar-item w3-button">Control</a>
+  <a href="types.htm" class="w3-bar-item w3-button">Types</a>
+ 
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="home.htm" class="w3-bar-item w3-button w3-teal">Home</a>
+  <a href="advantages.htm" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Advantages</a>
+ 
+  <a href="selec.htm" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Features</a>
+  
+<a href="disad.htm" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Downside</a>
+<a href="security.htm" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Security</a> 
+ <a href="conclusion.htm" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Conclusion</a>
+<a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+  
+ </div>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#team" class="w3-bar-item w3-button">Team</a>
+    <a href="#work" class="w3-bar-item w3-button">Work</a>
+    <a href="#pricing" class="w3-bar-item w3-button">Price</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
+  </div>
+</div>
+<br><br><br>
+<!-- Image Header -->
+
+<div class="w3-container">
+ 
+</div>
+
+<div class="w3-content w3-display-container">
+
+<div class="w3-display-container mySlides">
+  <img src="images\eResources-banner.jpg" style="width:100%">
+ 
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="images\e_resourcses.png" style="width:75%">
+
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="images\e4.jpg" style="width:100%">
+
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="images\234.jpg" style="width:70%">
+
+</div>
+
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+
+
+
+<!-- Work Row -->
+
+ 
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+
+<div class="w3-quarter">
+
+<h2>Introduction</h2>
+<p>E-resources is short term for Electronic Resources or electronic information resources. These are collections of information in electronic or digital format that are accessed on an electronic device, such as a mobile phone, computer, etc.
+These are published resources in electronic versions/format such as encyclopedias, pamphlets, e-books and e-journals. 
+
+Our e-Resources provide access to literally thousands of magazines and newspapers far more than the library could possibly subscribe to in paper format. 
+E- resources is distribution of information in any electronic form such as CD- ROM, Floppy Disk or Magnetic tape or across a computer network like e-journals, E-Books, ETD etc. accessible dial-up bulletin board or on-line services.</p>
+</div>
+
+
+<div class="w3-quarter">
+<div class="w3-card-2 w3-white">
+  <img src="images\e-library.jpg" alt="Vernazza" style="width:100%" height="210">
+  <div class="w3-container">
+  <h3>Purpose</h3>
+  <p>Main purpose of electronic resources is providing current information. 
+   <p>Up date information is necessary for research work. </p>
+  <p>Through electronic resources users are able to access latest information. </p>
+  <p>Save the time of user and staff</p>
+
+    </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card-2 w3-white">
+  <img src="images\eResources-banner.jpg" alt="Cinque Terre" style="width:100%" height="200">
+  <div class="w3-container">
+  <h3>Minimum hardware requirements</h3>
+   <p>1.	Minimum Hardware Requirement<br>
+          2.	Windows PC with P-4 CPU @3.0 GHz or above <br>
+          3.	512 MB RAM <br>
+          4.	HDD: 40 GB <br>
+          5.	CDROM Drive<br>
+          6.	Monitor: 15" /17" <br>
+          7.	Windows OS <br></p>
+
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card-2 w3-white">
+  <img src="images\eresources.jpg" alt="Monterosso" style="width:100%" height="200">
+  <div class="w3-container">
+  <h3>Minimum software requirements</h3>
+   <p>Internet Connectivity</p>
+   <p>IE: 5.x or later </p>
+    <p>Fire fox Mozilla 1.0 or later</p> 
+     <p>Netscape: 4.79 or later (no lower) </p>
+      <p>   Java version required: 6.0 or later</p>
+
+  </div>
+  </div>
+</div>
+
+</div>
+
+<!-- Container -->
+<div class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+  style="position:absolute;top:-28px;right:24px">+</a>
+</div>
+
+
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+      <h3>Address</h3>
+      <p>BOSCO PUBLIC SCHOOL</p>
+      <p>PASHCHIM VIHAR</p>
+      <p>+917011542906</p>
+      <p>abc@gmail.com</p>
+    </div>
+    <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+      <div class="w3-section">      
+        <label>Name</label>
+        <input class="w3-input" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">      
+        <label>Email</label>
+        <input class="w3-input" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">      
+        <label>Message</label>
+        <input class="w3-input" type="text" name="Message" required>
+      </div>  
+      <input class="w3-check" type="checkbox" checked name="Like">
+      <label>I Like it!</label>
+      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Follow Us</h4>
+&nbsp&nbsp&nbsp &nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a  href="www.facebook.com" title="Facebook"><img src="data\facebook.png" height="25"></a>
+  <a  href="www.twitter.com" title="Twitter"><img src="data\twitter.png" height="25"></a>
+  <a  href="www.blogger.com" title="Google +"><img src="data\blogger.png" height="25"></i></a>
+
+ 
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+   <img src="images\top.jpg" height="25"></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "300px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<title></title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+<div class="w3-bar w3-green w3-card-2 w3-left-align w3-large">
+<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-green" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+<a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+<a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About</a>
+<a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Opportunities</a>
+<a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Challenges</a>
+<a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Practical Idea</a>
+<a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact Us</a>
+</div>
+
+ <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+</div>
+
+
+<!-- Header -->
+
+<header class="w3-container w3-green w3-center" style="padding:128px 16px">
+<h1 class="w3-margin w3-jumbo">E - RESOURCES</h1>
+<p class="w3-xlarge"> By Bosco Public School</p>
+</header>
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+<div class="w3-content">
+<div class="w3-twothird">
+<h1>What are E-Resources?</h1>
+      
+<p class="w3-text-green">An electronic resource is defined as a resource which require computer access or any electronic product that delivers a collection of data, be it text referring to full text bases, electronic journals, image collections, other multimedia products and numerical, graphical or time based, as a commercially available title that has been published with an aim to being marketed. These may be delivered on CD ROM, on tape, via internet and so on. Over the past few years, a numbers of techniques and related standards have been developed which allow documents to be created and distributed in electronic form. Hence to cope with the present situation, librarians are shifting towards new media, namely electronic resources for their collection developments that the documents of users are better fulfilled. The e-resources on magnetic and optical media have a vast impact on the collections of University libraries. These are more useful due to inherent capabilities for manipulation and searching, providing information access is cheaper to acquiring information resources, savings in storage and maintenance etc. and sometimes the electronic form is the only alternative.
+</p>
+</div>
+</div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+<div class="w3-content">
+<div class="w3-third w3-center">
+</div>
+
+<div class="w3-twothird">
+    
+<h1 class="w3-padding-32">Types of E-Resources.</h1>
+
+<p class="w3-text-green"><b> 1. Online e-resources, which may include:</b>
+<ul><font color="green">
+<li>E-journal (Full text & bibliographic)</li>
+<li>E-books</li>
+<li>Online databases</li>
+<li>Web sites</li>
+</ul></font></p>
+<p class="w3-text-green">
+<b>2. Other electronic resources may include:</b>
+<ul><font color="green">
+<li>CD ROM</li>
+<li>Diskettes</li>
+<li>Other portable computer databases.</li>
+</ul>
+</font>
+</p>
+</div>
+</div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+<div class="w3-xlarge w3-padding-32">
+</div>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+var x = document.getElementById("navDemo");
+if (x.className.indexOf("w3-show") == -1) {
+x.className += " w3-show";
+} else { 
+x.className = x.className.replace(" w3-show", "");
+}
+}
+</script>
+
+</body>
+</html>
